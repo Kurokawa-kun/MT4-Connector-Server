@@ -8,11 +8,11 @@ https://github.com/Kurokawa-kun/MT4-Connector-Client-Java
 - Python版 クライアント  
 https://github.com/Kurokawa-kun/MT4-Connector-Client-Python  
   
-次のような仕組みで動作しています。通信にはOSの名前付きパイプを用いています。  
-<img src="materials/MT4-Connector-Image1.PNG" width="50%">
+次のような仕組みで動作します。通信にはOSの名前付きパイプを使用します。  
+<img src="materials/MT4-Connector-Image1.png" width="50%">
 
-将来的にやりたいことは次の通りです。相場情報をディープラーニングで学習して、注文を自動的に行うというものです。  
-<img src="materials/MT4-Connector-Image2.PNG" width="50%">
+将来的にやりたいことは単にMT4/MT5を外部から操作することではなく、ディープラーニングで相場情報を学習して自動注文を行うことです。
+<img src="materials/MT4-Connector-Image2.png" width="50%">
 
 ## 必要なもの
 必要に応じて以下のソフトウェアを用意してください。
