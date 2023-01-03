@@ -2,16 +2,16 @@
 ## 説明
 MT4を外部のプログラムからコントロールするための制御基盤です。ここで公開しているのはサーバー側の機能です。
 
-クライアントは以下のURLで公開しています：
-Java版 クライアント
-!URL here!
-Python版 クライアント
-!URL here!
+クライアントは以下のURLで公開しています：  
+Java版 クライアント  
+https://github.com/Kurokawa-kun/MT4-Connector-Client-Java
+Python版 クライアント  
+https://github.com/Kurokawa-kun/MT4-Connector-Client-Python
 
-具体的には次のような仕組みで動作しています。通信にはOSの名前付きパイプを用いています。
+具体的には次のような仕組みで動作しています。通信にはOSの名前付きパイプを用いています。  
 <img src="materials/MT4-Connector-Image1.PNG" width="50%">
 
-将来的にやりたいことは次の通りです。相場情報をディープラーニングで学習して、注文を自動的に行うというものです。
+将来的にやりたいことは次の通りです。相場情報をディープラーニングで学習して、注文を自動的に行うというものです。  
 <img src="materials/MT4-Connector-Image2.PNG" width="50%">
 
 ## 必要なもの
