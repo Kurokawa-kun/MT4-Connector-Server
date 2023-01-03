@@ -11,7 +11,7 @@ https://github.com/Kurokawa-kun/MT4-Connector-Client-Python
 次のような仕組みで動作します。通信にはOSの名前付きパイプを使用します。  
 <img src="materials/MT4-Connector-Image1.png" width="50%">
 
-将来的にやりたいことは単にMT4/MT5を外部から操作することではなく、ディープラーニングで相場情報を学習して自動注文を行うことです。
+将来的にやりたいことは単にMT4/MT5を外部から操作することではなく、ディープラーニングで相場情報を学習して自動注文を行うことです。ここで公開しているプログラムはその基盤となるものです。  
 <img src="materials/MT4-Connector-Image2.png" width="50%">
 
 ## 必要なもの
@@ -30,19 +30,19 @@ https://github.com/Kurokawa-kun/MT4-Connector-Client-Python
 1. Connectorクラスを継承してOnInit, OnTick, OnDeinit関数を実装します。
 
 ### サーバー側の準備
-1. サーバー側のReleasesからzipをダウンロードします。
-1. zipファイルの中身をMT4のデータフォルダに展開します。
+1. サーバー側のReleasesからzipをダウンロードします。  
+1. zipファイルの中身をMT4のデータフォルダに展開します。  
     ※ デフォルトのデータフォルダは以下：  
     C:\Users\（ユーザー名）\AppData\Roaming\MetaQuotes\Terminal\（インスタンスID）
-1. MT4を起動します。
+1. MT4を起動します。  
 1. NavigatorウィンドウのExpertsツリーからConnectorをチャートに貼り付けます。  
     ※ 「DLLの使用を許可する」にチェックを入れてください
-1. 必要なパラメータを入力します。
+1. 必要なパラメータを入力します。  
     1.1.作業ディレクトリ
     1.1.インタプリタ名
 
 ## 制限事項
-以下の機能群は代替機能があることや、本機能の目的とは関連性が薄いためサポートしません。
+以下の機能群はJava/Pythonに代替機能があることや、本来の目的とは関連性が低いためサポートしません。
 - 算術関数
 - 文字列関数
 - 配列関数
