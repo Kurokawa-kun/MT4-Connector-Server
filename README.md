@@ -1,6 +1,7 @@
 # MT4-Connector-Server
 ## 説明
-MT4を外部のプログラムからコントロールするための制御基盤です。ここで公開しているのはサーバー側の機能です。
+MT4を外部のプログラムからコントロールするための制御基盤です。  
+ここで公開しているのはサーバー側の機能です。
 
 クライアントは以下のURLで公開しています：  
 - Java版 クライアント  
@@ -8,10 +9,10 @@ https://github.com/Kurokawa-kun/MT4-Connector-Client-Java
 - Python版 クライアント  
 https://github.com/Kurokawa-kun/MT4-Connector-Client-Python  
   
-次のような仕組みで動作します。通信にはOSの名前付きパイプを使用します。  
+次のような仕組みで動作します。MT4からは単体のMQL4プログラムが動作しているように見えます。  
 <img src="materials/MT4-Connector-Image1.png" width="50%">
 
-将来的にやりたいことは単にMT4/MT5を外部から操作することではなく、ディープラーニングで相場情報を学習して自動注文を行うことです。ここで公開しているプログラムはその基盤となるものです。  
+将来的にやりたいことはMT4/MT5を外部から操作することではなく、ディープラーニングで相場情報を学習して自動注文を行うことです。このプログラムはその基盤となるものです。  
 <img src="materials/MT4-Connector-Image2.png" width="50%">
 
 ## 必要なもの
@@ -25,9 +26,8 @@ https://github.com/Kurokawa-kun/MT4-Connector-Client-Python
 ### クライアント側の準備
 
 1. クライアント側のReleasesからzipをダウンロードします。
-1. zipファイルの中身を開発用のフォルダに展開します。
-1. 開発環境で開きます。
-1. Connectorクラスを継承してOnInit, OnTick, OnDeinit関数を実装します。
+1. zipファイルの中身を開発用の作業フォルダに展開します。
+1. 開発環境で開きます。Connectorクラスを継承してOnInit, OnTick, OnDeinit関数を実装します。
 
 ### サーバー側の準備
 1. サーバー側のReleasesからzipをダウンロードします。  
@@ -37,9 +37,9 @@ https://github.com/Kurokawa-kun/MT4-Connector-Client-Python
 1. MT4を起動します。  
 1. NavigatorウィンドウのExpertsツリーからConnectorをチャートに貼り付けます。  
     ※ 「DLLの使用を許可する」にチェックを入れてください
-1. 必要なパラメータを入力します。  
-    1.1.作業ディレクトリ
-    1.1.インタプリタ名
+1. 必要なパラメータを指定します。  
+    1. 作業ディレクトリ    
+    1. インタプリタ名    
 
 ## 制限事項
 以下の機能群はJava/Pythonに代替機能があることや、本来の目的とは関連性が低いためサポートしません。
@@ -56,4 +56,4 @@ https://github.com/Kurokawa-kun/MT4-Connector-Client-Python
 
 ## 補足
 - MT5のサポートは？
-    - そのうち手が空いたら取り組むかもしれません…。
+    - 手が空いたらそのうち取り組むかもしれません。
