@@ -57,3 +57,18 @@ https://github.com/Kurokawa-kun/MT4-Connector-Client-Python
 ## 補足
 - MT5のサポートは？
     - 手が空いたらそのうち取り組むかもしれません。
+
+# 技術的な話
+## 関数の呼び出し
+MQL4の関数と外部プログラムの関数を2つに分けました。
+- グローバル関数 … 外部から呼び出される関数
+- ローカル関数 … グローバル関数の内部で呼び出される関数
+
+<table>
+  <tr><td colspan="2">MQL4</td><td colspan="2">外部プログラム</td></tr>
+  <tr><td>グローバル関数</td><td>役割</td><td>グローバル関数</td><td>役割</td></tr>
+  <tr><td>OnInit</td><td>外部プログラムにOnInitの実行依頼を行います</td><td>OnInit</td><td>MQL4のOnInitに相当する処理を記述します</td></tr>
+  <tr><td>OnTick</td><td>外部プログラムにOnTickの実行依頼を行います</td><td>OnTick</td><td>MQL4のOnTickに相当する処理を記述します</td></tr>
+  <tr><td>OnDeinit</td><td>外部プログラムにOnDeinitの実行依頼を行います</td><td>OnDeinit</td><td>MQL4のOnDeinitに相当する処理を記述します</td></tr>
+  <tr><td>上記以外（例えばOrderSend）</td><td>MQL4側の同名のローカル関数（例えばOrderSend）を呼び出します。</td><td></td><td></td></tr>
+</table>
