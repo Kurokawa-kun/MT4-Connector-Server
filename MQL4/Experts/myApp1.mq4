@@ -3,7 +3,7 @@
 //|                                         Copyright 2023, Kurokawa |
 //|                                   https://twitter.com/ImKurokawa |
 //+------------------------------------------------------------------+
-#property copyright "Copyright 2022, Kurokawa"
+#property copyright "Copyright 2023, Kurokawa"
 #property link      "https://twitter.com/ImKurokawa"
 #property strict
 
