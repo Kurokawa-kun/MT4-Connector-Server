@@ -1,6 +1,6 @@
 //+------------------------------------------------------------------+
 //|                                                     DataGram.mqh |
-//|                                         Copyright 2022, Kurokawa |
+//|                                         Copyright 2023, Kurokawa |
 //|                                   https://twitter.com/ImKurokawa |
 //+------------------------------------------------------------------+
 #property copyright "Copyright 2022, Kurokawa"
@@ -228,14 +228,6 @@ public:
       SetData((int)v);
       return;
    }
-   //void SetData(enum v)
-   //{
-   //   Buffer[0] = (char)((v >> 24) & 0xFF);
-   //   Buffer[1] = (char)((v >> 16) & 0xFF);      
-   //   Buffer[2] = (char)((v >> 8) & 0xFF);
-   //   Buffer[3] = (char)(v & 0xFF);
-   //   return;
-   //}
    void SetData(long v)
    {
       Buffer[BUFFER_SIZE - 1] = CHAR_NULL;
@@ -336,18 +328,6 @@ public:
          l |= ((long)Buffer[v] & 0xFF) << (8 * (7 - v));
       }
       return l;        
-      //long u = 0;
-      ////  MQL4のバグ。ビット演算をすると型の範囲がintになるためこの手法を使う。
-      //u |= ((Buffer[0] & 0xFF) << 56);
-      //u |= ((Buffer[1] & 0xFF) << 48);
-      //u |= ((Buffer[2] & 0xFF) << 40);
-      //u |= ((Buffer[3] & 0xFF) << 32);
-      //long v = 0;
-      //v |= ((Buffer[4] & 0xFF) << 24);
-      //v |= ((Buffer[5] & 0xFF) << 16);
-      //v |= ((Buffer[6] & 0xFF) << 08);
-      //v |= ((Buffer[7] & 0xFF) << 00);
-      //return (u<<32) | v;
    }
    ulong GetDataULong()
    {

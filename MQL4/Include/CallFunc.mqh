@@ -1,6 +1,6 @@
 //+------------------------------------------------------------------+
 //|                                                     CallFunc.mqh |
-//|                                         Copyright 2022, Kurokawa |
+//|                                         Copyright 2023, Kurokawa |
 //|                                   https://twitter.com/ImKurokawa |
 //+------------------------------------------------------------------+
 #property copyright "Copyright 2022, Kurokawa"
@@ -990,7 +990,6 @@ void CallFunc(FuncInfo &funcInfo)
          )
       );
    }
-   //  ！ObjectGetInteger(long, string, int, int, &long)のほうは実装が面倒なので今のところ作らない
    else if (funcInfo.FuncName == "ObjectGetInteger1")
    {
       funcInfo.ReturnValue.SetData(

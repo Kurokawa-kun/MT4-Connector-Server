@@ -1,6 +1,6 @@
 //+------------------------------------------------------------------+
 //|                                                      Message.mqh |
-//|                                         Copyright 2022, Kurokawa |
+//|                                         Copyright 2023, Kurokawa |
 //|                                   https://twitter.com/ImKurokawa |
 //+------------------------------------------------------------------+
 #property copyright "Copyright 2022, Kurokawa"
