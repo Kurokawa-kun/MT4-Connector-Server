@@ -33,6 +33,7 @@ void OnTimer()
    if (t == -1)
    {
       PrintFormat("OrderSendが失敗しました。エラーコードは'%d'。", GetLastError());
+      return;
    }
    PrintFormat("チケット番号は'%d'。", t);
    ExpertRemove();   //  プログラムの終了
