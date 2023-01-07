@@ -10,12 +10,12 @@ https://github.com/Kurokawa-kun/MT4-Connector-Client-Java
 https://github.com/Kurokawa-kun/MT4-Connector-Client-Python  
   
 下図のような仕組みで動作します。    
-<img src="materials/MT4-Connector-Image1.png" width="50%">
+<img src="materials/MT4-Connector-Image1.png" width="75%">
     
 MT4からは単体のMQL4プログラム（EA）が動作しているように見えます。サーバー側のMQL4プログラムは起動時にWindows APIを呼び出して名前付きパイプを作成します。この名前付きパイプを通してMQL4プログラム（以下、サーバーとも呼ぶ）とJava/Pythonプログラム（以下、外部プログラムまたはクライアントと呼ぶ）が通信を行います。  
     
 将来的にやりたいことはMT4/MT5を外部から操作することではなく、ディープラーニングで相場情報を学習して自動注文を行うことです。このプログラムはその基盤となるものです。  
-<img src="materials/MT4-Connector-Image2.png" width="50%">
+<img src="materials/MT4-Connector-Image2.png" width="75%">
 
 ## 必要なもの
 必要に応じて以下のソフトウェアを用意してください。
@@ -84,7 +84,7 @@ MT4からは単体のMQL4プログラム（EA）が動作しているように�
 </table>
     
 MT4でイベントが発生するたびに以下の機序で関数が呼び出されます。  
-<img src="materials/MT4-Connector-Image3.png" width="50%">
+<img src="materials/MT4-Connector-Image3.png" width="65%">
 
 ## メッセージ種別
 通信で用いられるメッセージ種別は以下の通りです。
